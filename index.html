@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Viewer</title>
+    <script type="text/javascript"
+            src="module1.js">
+    </script>
+</head>
+<body>
+    Manufacturing Zone Overview
+    <button onclick="f()">
+        Click Me To Update
+    </button>
+    <TABLE BORDER=”2″>
+        <TR>
+            <TD>Machine 1</TD>
+            <TD>Machine 2</TD>
+            <TD>Machine 3</TD>
+        </TR>
+        <TR>
+            <TD id = "nameFor1">EMPTY</TD>
+            <TD id = "nameFor2">EMPTY</TD>
+            <TD id = "nameFor3">EMPTY</TD>
+        </TR>
+    </TABLE>
+    <script type="text/javascript">
+        function f() {
+            let name_1 = Operator.name_1;
+            let name_2 = Operator.name_2;
+            let name_3 = Operator.name_3;
+
+            document.getElementById("nameFor1").innerHTML = name_1;
+            document.getElementById("nameFor2").innerHTML = name_2;
+            document.getElementById("nameFor3").innerHTML = name_3;
+        }
+    </script>
+</body>
+</html>
+
